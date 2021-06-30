@@ -217,19 +217,13 @@ public class AvaliacaoController {
 
 <p align="justify"> :exclamation: 
 
-Spring Data JPA: Repositórios, Consultas, Projeções e Specifcations
-Cenário:
-Precisamos possibilitar a inserção, atualização, exibição e remoção de uma avaliação criada por mentores(as). Além disso, vamos querer buscar as avaliações pesquisando pelos títulos delas.
-Descreva exatamente quais passos você faria para possibilitar que tais operações fossem feitas usando o Spring Data JPA aproveitando o máximo de coisas prontas da tecnologia.
-Pergunta bônus: Se você só cria interface no Spring Data JPA, onde está a real implementação?
-
-Aqui temos duas opçoes 
 
 CrudRepository
 CrudRepositoryé uma interface básica e estende a Repositoryinterface.
 CrudRepository fornece principalmente operações CRUD (Criar, Ler, Atualizar, Excluir).
 O tipo de saveAll()método de retorno é Iterable.
 Caso de uso - para realizar operações CRUD, defina a extensão do repositório CrudRepository.
+	
 JpaRepository
 JpaRepositoryestende PagingAndSortingRepositoryque estende CrudRepository.
 JpaRepositoryfornece operações CRUD e paginação, juntamente com métodos adicionais, tais como flush(), saveAndFlush()e deleteInBatch(), etc.
